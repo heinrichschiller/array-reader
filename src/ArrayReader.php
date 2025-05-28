@@ -47,7 +47,7 @@ final class ArrayReader
      *
      * @return int The value
      */
-    public function getInt(string $key, int $default = null): int
+    public function getInt(string $key, ?int $default = null): int
     {
         $value = $this->find($key, $default);
 
@@ -66,7 +66,7 @@ final class ArrayReader
      *
      * @return int|null The value
      */
-    public function findInt(string $key, int $default = null): ?int
+    public function findInt(string $key, ?int $default = null): ?int
     {
         $value = $this->find($key, $default);
 
@@ -87,7 +87,7 @@ final class ArrayReader
      *
      * @return string The value
      */
-    public function getString(string $key, string $default = null): string
+    public function getString(string $key, ?string $default = null): string
     {
         $value = $this->find($key, $default);
 
@@ -106,7 +106,7 @@ final class ArrayReader
      *
      * @return string|null The value
      */
-    public function findString(string $key, string $default = null): ?string
+    public function findString(string $key, ?string $default = null): ?string
     {
         $value = $this->find($key, $default);
 
@@ -127,7 +127,7 @@ final class ArrayReader
      *
      * @return array<mixed> The value
      */
-    public function getArray(string $key, array $default = null): array
+    public function getArray(string $key, ?array $default = null): array
     {
         $value = $this->find($key, $default);
 
@@ -146,7 +146,7 @@ final class ArrayReader
      *
      * @return array<mixed>|null The value
      */
-    public function findArray(string $key, array $default = null): ?array
+    public function findArray(string $key, ?array $default = null): ?array
     {
         $value = $this->find($key, $default);
 
@@ -167,7 +167,7 @@ final class ArrayReader
      *
      * @return float The value
      */
-    public function getFloat(string $key, float $default = null): float
+    public function getFloat(string $key, ?float $default = null): float
     {
         $value = $this->find($key, $default);
 
@@ -186,7 +186,7 @@ final class ArrayReader
      *
      * @return float|null The value
      */
-    public function findFloat(string $key, float $default = null): ?float
+    public function findFloat(string $key, ?float $default = null): ?float
     {
         $value = $this->find($key, $default);
 
@@ -207,7 +207,7 @@ final class ArrayReader
      *
      * @return bool The value
      */
-    public function getBool(string $key, bool $default = null): bool
+    public function getBool(string $key, ?bool $default = null): bool
     {
         $value = $this->find($key, $default);
 
@@ -226,7 +226,7 @@ final class ArrayReader
      *
      * @return bool|null The value
      */
-    public function findBool(string $key, bool $default = null): ?bool
+    public function findBool(string $key, ?bool $default = null): ?bool
     {
         $value = $this->find($key, $default);
 
@@ -247,7 +247,7 @@ final class ArrayReader
      *
      * @return Chronos The value
      */
-    public function getChronos(string $key, Chronos $default = null): Chronos
+    public function getChronos(string $key, ?Chronos $default = null): Chronos
     {
         $value = $this->find($key, $default);
 
@@ -270,7 +270,7 @@ final class ArrayReader
      *
      * @return Chronos|null The value
      */
-    public function findChronos(string $key, Chronos $default = null): ?Chronos
+    public function findChronos(string $key, ?Chronos $default = null): ?Chronos
     {
         $value = $this->find($key, $default);
 
