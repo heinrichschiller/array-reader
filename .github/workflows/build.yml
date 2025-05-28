@@ -20,7 +20,6 @@ jobs:
         with:
           php-version: ${{ matrix.php-versions }}
           extensions: mbstring, intl, zip
-          coverage: none
 
       - name: Check PHP Version
         run: php -v
